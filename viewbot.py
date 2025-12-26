@@ -31,8 +31,8 @@ class Logger:
 
 sys.stdout = Logger(path)
 
-channel_id_input = "ENTER CHANNEL ID"
-channel_id = channel_id_input.strip("https://www.youtube.com/channel/")
+channel_id_input = "https://www.youtube.com/@IOTF"
+channel_id = channel_id_input.strip("https://www.youtube.com/@IOTF")
 
 videos = scrapetube.get_channel(channel_id)
 urls = []
